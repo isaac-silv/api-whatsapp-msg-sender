@@ -23,9 +23,11 @@ Este projeto é uma API REST feita em Node.js e Express que envia mensagens via 
 
 Renomeie o arquivo .env_exemple para .env, adicione as seguintes variáveis (substitua pelos seus dados):
 
+```bash
 ZAPI_INSTANCE_ID=SEU_ID_DA_INSTANCIA
 ZAPI_TOKEN=SEU_TOKEN
 ZAPI_CLIENT_TOKEN=SEU_CLIENT_TOKEN
+```
 
 ```bash
 npm install
@@ -33,15 +35,17 @@ npm start
 ```
 
 ### 🚀 Rotas
-`POST /sms-webhook`
+`POST /msg-webhook`
+
 Envia uma mensagem via WhatsApp.
 
 Corpo da Requisição (JSON):
 
-Header 
+### Header 
 Content-Type: application/x-www-form-urlencoded
 
-Body: Form Url Enconded
+### Body 
+Form Url Enconded
 
 ```bash
 {
